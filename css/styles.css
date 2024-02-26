@@ -15,7 +15,9 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+a:hover .logo-accent,
+a:active .logo-accent {
   color: #404bbf;
 }
 
@@ -41,11 +43,7 @@ p {
   color: #434455;
 }
 
-/* HEADER */
-
-.logo-accent {
-  color: #4d5ae5;
-}
+/* LOGO */
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -54,7 +52,21 @@ p {
   font-size: 18px;
   letter-spacing: 3%;
   line-height: 1.16667;
+  color: inherit;
 }
+
+.logo-accent {
+  color: #4d5ae5;
+}
+
+a.logo:hover,
+a.logo:active,
+a.logo:hover .logo-accent,
+a.logo:active .logo-accent {
+  color: #404bbf;
+}
+
+/* HEADER */
 
 .header-navigation {
   font-weight: 500;
@@ -74,10 +86,8 @@ p {
   text-align: center;
 }
 
-.order-button {
+.hero-order-button {
   cursor: pointer;
-
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 4%;
   color: #ffffff;
@@ -117,12 +127,10 @@ p {
   background-color: #2e2f42;
 }
 
-.footer .logo,
-.footer-promo-text {
+.footer {
   color: #f4f4fd;
 }
 
-.footer .logo:hover,
-.footer .logo:active {
-  color: #404bbf;
+.footer-promo-text {
+  color: inherit;
 }
