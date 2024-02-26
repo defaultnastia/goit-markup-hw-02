@@ -59,13 +59,6 @@ p {
   color: #4d5ae5;
 }
 
-a.logo:hover,
-a.logo:active,
-a.logo:hover .logo-accent,
-a.logo:active .logo-accent {
-  color: #404bbf;
-}
-
 /* HEADER */
 
 .header-navigation {
