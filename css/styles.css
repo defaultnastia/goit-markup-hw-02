@@ -3,8 +3,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
-  color: #2e2f42;
+  letter-spacing: 0.02em;
+  color: #434455;
   background-color: #ffffff;
 }
 
@@ -16,8 +16,11 @@ a {
 
 a:hover,
 a:active,
-a:hover .logo-accent,
-a:active .logo-accent {
+a:focus,
+a:hover .logo-accent-header,
+a:active .logo-accent-header,
+a:hover .logo-accent-footer,
+a:active .logo-accent-footer {
   color: #404bbf;
 }
 
@@ -25,22 +28,20 @@ ul {
   list-style-type: none;
 }
 
-h2 {
+.section-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   text-transform: capitalize;
   text-align: center;
+  color: #2e2f42;
 }
 
-h3 {
+.list-item-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-}
-
-p {
-  color: #434455;
+  color: #2e2f42;
 }
 
 /* LOGO */
@@ -50,19 +51,28 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 3%;
-  line-height: 1.16667;
-  color: inherit;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  color: #4d5ae5;
 }
 
-.logo-accent {
-  color: #4d5ae5;
+.logo-accent-header {
+  color: #2e2f42;
+}
+
+.logo-accent-footer {
+  color: #f4f4fd;
 }
 
 /* HEADER */
 
-.header-navigation {
+.header-nav-list-item {
+  color: #2e2f42;
   font-weight: 500;
+}
+
+.header-contacts {
+  font-style: normal;
 }
 
 /* HERO */
@@ -75,27 +85,25 @@ p {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   text-align: center;
 }
 
 .hero-order-button {
   cursor: pointer;
   font-weight: 500;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
   color: #ffffff;
   background-color: #4d5ae5;
 }
 
-.order-button:hover {
+.hero-order-button:hover,
+.hero-order-button:focus {
   background-color: #404bbf;
 }
 
 /* FEATURES */
-
-.features-section-header {
-  display: none;
-}
 
 /* TEAM */
 
